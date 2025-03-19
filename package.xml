@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+
+   <!-- Package information: -->
+   <name>kuka_velocity_control</name>
+   <version>0.0.0</version>
+   <description>Configuration and launch files for the kuka robot to run the serial_link_action_server package.</description>
+   <maintainer email="jonathan.woolfrey@gmail.com">Woolfrey</maintainer>
+   <license>GNU General Public Licence GPLv3</license>
+
+   <!-- Basic requirements to build: -->
+   
+   <buildtool_depend>ament_cmake</buildtool_depend>
+   <test_depend>ament_lint_auto</test_depend>
+   <test_depend>ament_lint_common</test_depend>
+
+   <export>
+     <build_type>ament_cmake</build_type>
+   </export>
+   
+    <!-- Default ROS2 packages -->
+  
+   <depend>action_msgs</depend>
+   <depend>rclcpp</depend>
+   <depend>std_msgs</depend>
+
+    <!-- Other packages -->
+
+    <build_depend>serial_link_interfaces</build_depend>
+    <exec_depend>serial_link_interfaces</exec_depend>
+    <build_depend>serial_link_interfaces</build_depend>
+    <exec_depend>serial_link_interfaces</exec_depend>
+   
+</package>

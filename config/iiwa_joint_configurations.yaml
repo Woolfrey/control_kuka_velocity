@@ -1,0 +1,15 @@
+serial_link_client: # <- THIS MUST MATCH THE NODE NAME
+  ros__parameters:
+    number_of_joints: 7                                                         # We need this to split up the position arrays
+    joint_config_names: ["home", "ready", "multi"]                              # We need to declare them here so we can search them by name
+    home:
+        positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+        times: [5.0]
+    ready:
+        positions: [1.844, -0.656, -1.782, -1.383, 0.060, 0.0311, -0.705]
+        times: [5.0]
+    multi:
+        positions: [2.570, -0.484, -1.865, -1.495, 1.063, -0.699,  -1.500,
+                    1.844, -0.656, -1.782, -1.383, 0.060,  0.0311, -0.705,
+                    0.000,  0.000,  0.000,  0.000, 0.000,  0.0000,  0.000]
+        times: [4.0, 8.0, 12.0]

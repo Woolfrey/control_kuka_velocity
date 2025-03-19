@@ -1,0 +1,6 @@
+serial_link_client: # <- THIS MUST MATCH THE NODE NAME
+  ros__parameters:
+    pose_error_tolerance:
+        position: 0.5                                             # In meters
+        orientation: 0.5                                          # In radians
+    joint_error_tolerances: [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]   # In radians

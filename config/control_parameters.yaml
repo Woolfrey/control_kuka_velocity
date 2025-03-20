@@ -21,7 +21,7 @@
         manipulability_threshold: 0.001
         max_joint_acceleration: 10.0
 
-        # This is for the underlying QP solver class:
+        # This is for the underlying QPSolver class:
         initial_barrier_scalar: 500.0
         barrier_reduction_rate: 0.001
         step_size_tolerance: 0.05

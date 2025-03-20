@@ -1,4 +1,4 @@
-serial_link_client: # <- THIS MUST MATCH THE NODE NAME
+/**: # <- THIS MUST MATCH THE NODE NAME
   ros__parameters:
     pose_error_tolerance:
         position: 0.5                                             # In meters

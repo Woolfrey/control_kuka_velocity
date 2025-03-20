@@ -26,10 +26,8 @@
    <depend>std_msgs</depend>
 
     <!-- Other packages -->
-
-    <build_depend>serial_link_interfaces</build_depend>
-    <exec_depend>serial_link_interfaces</exec_depend>
-    <build_depend>serial_link_interfaces</build_depend>
-    <exec_depend>serial_link_interfaces</exec_depend>
+    
+    <exec_depend>serial_link_action_client</exec_depend>
+    <exec_depend>serial_link_action_server</exec_depend>
    
 </package>

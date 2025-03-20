@@ -5,7 +5,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    server_directory = get_package_share_directory('serial_link_action_server')                     # Gets relative path
+    this_directory = get_package_share_directory('kuka_velocity_control')
 
     # Node: Trajectory Tracking Server
     trajectory_tracking = Node(
@@ -13,12 +13,12 @@ def generate_launch_description():
         executable = 'trajectory_tracking_server',
         name       = 'trajectory_tracking_server',
         output     = 'screen',
-        parameters = [os.path.join(server_directory, 'config/control_parameters.yaml')],
+        parameters = [os.path.join(this_directory, 'config/control_parameters.yaml')],
         arguments  = [
-                        os.path.join(server_directory, 'urdf', 'kuka_iiwa_14', 'iiwa14.urdf'),      # URDF location
+                        os.path.join(this_directory, 'urdf', 'iiwa14.urdf'),                        # URDF location
                         'link7',                                                                    # Endpoint name
                         'joint_command_relay',                                                      # Topic to publish joint commands to
-                        'joint_states'                                                              # Joint state topic to subscribe to
+                        'joint_state'                                                               # Joint state topic to subscribe to
                      ]
     )
 

@@ -1,4 +1,4 @@
-serial_link_client: # <- THIS MUST MATCH THE NODE NAME
+/**:
   ros__parameters:
     pose_names: ["up", "down", "left", "right", "fore", "aft", "round"] # We need to declare them here so we can search them by name
     up:

@@ -1,4 +1,4 @@
-serial_link_client: # <- THIS MUST MATCH THE NODE NAME
+/**:
   ros__parameters:
     number_of_joints: 7                                                         # We need this to split up the position arrays
     joint_config_names: ["home", "ready", "multi"]                              # We need to declare them here so we can search them by name

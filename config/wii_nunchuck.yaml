@@ -1,0 +1,31 @@
+/**:
+    ros__parameters:
+        joy_twist_map:
+            frame_name: "world"                 # Use "world" or "link7"
+            max_linear_velocity: 0.2            # m/s
+            max_angular_velocity: 0.1           # rad/s
+            max_linear_acceleration: 2.0        # m/s/s
+            max_angular_acceleration: 1.0       # rad/s/s
+            default:
+                axis:
+                    linear_x:   1
+                    linear_y:   0
+                    linear_z:  -1
+                    angular_x: -1
+                    angular_y: -1
+                    angular_z: -1
+                button:
+                   positive:
+                        linear_x:  -1
+                        linear_y:  -1
+                        linear_z:   1
+                        angular_x: -1
+                        angular_y: -1
+                        angular_z: -1
+                   negative:
+                        linear_x:  -1
+                        linear_y:  -1
+                        linear_z:   0
+                        angular_x: -1
+                        angular_y: -1
+                        angular_z: -1

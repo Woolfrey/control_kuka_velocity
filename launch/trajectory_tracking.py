@@ -14,12 +14,10 @@ def generate_launch_description():
         name       = 'trajectory_tracking_server',
         output     = 'screen',
         parameters = [os.path.join(this_directory, 'config/control_parameters.yaml')],
-        arguments  = [
-                        os.path.join(this_directory, 'urdf', 'iiwa14.urdf'),                        # URDF location
-                        'link7',                                                                    # Endpoint name
-                        'joint_command_relay',                                                      # Topic to publish joint commands to
-                        'joint_state'                                                               # Joint state topic to subscribe to
-                     ]
+        arguments  = [os.path.join(this_directory, 'urdf/iiwa14.urdf'),                             # URDF location
+                     'link7',                                                                       # Endpoint name
+                     'joint_command_relay',                                                         # Topic to publish joint commands to
+                     'joint_state']                                                                 # Joint state topic to subscribe to
     )
 
     # Node: Joint Command Relay
@@ -28,11 +26,9 @@ def generate_launch_description():
         executable = 'joint_command_relay',
         name       = 'joint_command_relay',
         output     = 'screen',
-        arguments  = [
-                        'joint_command_relay',                                                      # Node name
-                        'joint_command_relay',                                                      # Subscribe topic
-                        'joint_commands'                                                            # Publish topic
-                     ]
+        arguments  = ['joint_command_relay',                                                        # Node name
+                      'joint_command_relay',                                                        # Subscribe topic
+                      'joint_commands']                                                             # Publish topic
     )
 
     return LaunchDescription([trajectory_tracking, relay])

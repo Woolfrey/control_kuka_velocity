@@ -4,8 +4,8 @@
         timeout: 0.1                                            # s                      
         joint: [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]              # rad
         pose:
-            position: 0.5                                       # m
-            orientation: 0.2                                    # rad
+            position: 0.2                                       # m
+            orientation: 0.35                                   # rad
         twist:
             linear: 0.5                                         # m/s
             angular: 0.1                                        # rad/s

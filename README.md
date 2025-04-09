@@ -10,7 +10,7 @@ In essence, it serves as an example of how to implement the [serial_link_action_
 - Real-time control of endpoint pose with an interactive marker in RViz.
 
 <p align="center">
-  <img src="doc/interaction_diagram.png" width="600" height="auto"/>
+  <img src="doc/interaction_diagram.png" width="1000" height="auto"/>
 </p>
 
 #### :compass: Navigation

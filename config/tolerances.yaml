@@ -1,11 +1,11 @@
 /**:
   ros__parameters:
     tolerance:
-        timeout: 0.1                                            # s                      
-        joint: [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]              # rad
+        timeout: 0.1                               # s                      
+        joint: [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5] # rad
         pose:
-            position: 0.2                                       # m
-            orientation: 0.35                                   # rad
+            position: 0.2                          # m
+            orientation: 0.35                      # rad
         twist:
-            linear: 0.5                                         # m/s
-            angular: 0.1                                        # rad/s
+            linear: 0.5                            # m/s
+            angular: 1.0                           # rad/s

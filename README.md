@@ -118,6 +118,10 @@ In the client terminal:
 
 You should be able to drag around the interactive marker and the robot will automatically follow.
 
+<p align="center">
+  <img src="doc/follow_transform.png" width="600" height="auto"/>
+</p>
+
 ### launch_follow_twist.sh
 
 Inside the `control_kuka_velocity/` directory, type:
@@ -134,12 +138,16 @@ A `joy` node is automatically run, and a `joy_twist_mapper` node (from the inter
 
 You can change the joystick mapping in the `config/wii_nunchuck.yaml` file.
 
+<p align="center">
+  <img src="doc/follow_twist.png" width="600" height="auto"/>
+</p>
+
 ### launch_trajectory_tracking.sh
 
 From the `control_kuka_velocity/` directory type this in to a terminal:
 
 ```
-./launch_trajectory_tracking.sh
+./launch_track_trajectory.sh
 ```
 
 This will start up the clients & servers for both joint & Cartesian velocity control:
@@ -147,6 +155,10 @@ This will start up the clients & servers for both joint & Cartesian velocity con
 2. Try commands like `up`, `down`, `left`, `right`, etc. to move the endpoint of the robot in different directions.
 
 Type `options` to see what is available.
+
+<p align="center">
+  <img src="doc/track_trajectory.png" width="600" height="auto"/>
+</p>
 
 [:top: Back to Top.](#joystick-kuka-velocity-control)
 

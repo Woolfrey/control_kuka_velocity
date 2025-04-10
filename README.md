@@ -1,6 +1,6 @@
 # :joystick: Kuka Velocity Control
 
-This package contains launch files for several nodes, action servers, and action clients to enable joint & Cartesian velocity control of the Kuka iiwa14 robot. It uses the [serial_link_action_client](https://github.com/Woolfrey/client_serial_link) package to send goals to the [serial_link_action_server](https://github/com/Woolfrey/server_serial_link). The latter implements [Robot Library](https://github.com/Woolfrey/software_robot_library) which is a C++ library for modeling & control. It can also interact with the [mujoco_ros2](https://github.com/Woolfrey/mujoco_ros2) package to for simulation.
+This package contains launch files for several nodes, action servers, and action clients to enable joint & Cartesian velocity control of the Kuka iiwa14 robot. It uses the [serial_link_action_client](https://github.com/Woolfrey/client_serial_link) package to send goals to the [serial_link_action_server](https://github.com/Woolfrey/server_serial_link). The latter implements [Robot Library](https://github.com/Woolfrey/software_robot_library) which is a C++ library for modeling & control. It can also interact with the [mujoco_ros2](https://github.com/Woolfrey/mujoco_ros2) package to for simulation.
 
 In essence, it serves as an example of how to implement the [serial_link_action_client](https://github.com/Woolfrey/client_serial_link) package to send goals to the [serial_link_action_server](https://github/com/Woolfrey/server_serial_link) to control a robot arm, with all the necessary config files. You can copy and/or modify it to get it working for other robot arms :mechanical_arm:.
 
@@ -27,10 +27,10 @@ In essence, it serves as an example of how to implement the [serial_link_action_
 - [Ubuntu 22.04](https://ubuntu.com/blog/tag/22-04-lts), or later,
 - [ROS2 Humble](https://docs.ros.org/en/humble/index.html), or later, the
 - The [serial link interfaces](https://github.com/Woolfrey/interface_serial_link) package,
-- The [serial_link_action_server](https://github/com/Woolfrey/server_serial_link) package,
-- The [serial_link_action_client](https://github/com/Woolfrey/client_serial_link) package,
+- The [serial_link_action_server](https://github.com/Woolfrey/server_serial_link) package,
+- The [serial_link_action_client](https://github.com/Woolfrey/client_serial_link) package,
 - [Robot Library](https://github.com/Woolfrey/software_robot_library) (for the serial link action server),
-- The [mujoco_ros2](https://gitub.com/Woolfrey/mujoco_ros2) (optional),
+- The [mujoco_ros2](https://github.com/Woolfrey/mujoco_ros2) (optional),
 - [MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie) (if using the mujoco_ros2 package),
 
 > [!NOTE]

@@ -94,6 +94,7 @@ Play around with them and see how it works.
 ### mujoco.py
 
 If you don't have a real robot, you can use this MuJoCo simulation. Inside the `launch/mujoco.py` you need to specify the `xmlScenePath` where the model is located:
+
 ```
 xmlScenePath = "/home/<username>/workspace/mujoco_menagerie/kuka_iiwa_14/scene.xml"
 ```
@@ -120,7 +121,7 @@ In the client terminal:
 You should be able to drag around the interactive marker and the robot will automatically follow.
 
 <p align="center">
-  <img src="doc/follow_transform.png" width="600" height="auto"/>
+  <img src="doc/follow_transform.gif" width="600" height="auto"/>
 </p>
 
 ### launch_follow_twist.sh
@@ -140,7 +141,7 @@ A `joy` node is automatically run, and a `joy_twist_mapper` node (from the inter
 You can change the joystick mapping in the `config/wii_nunchuck.yaml` file.
 
 <p align="center">
-  <img src="doc/follow_twist.png" width="600" height="auto"/>
+  <img src="doc/follow_twist.gif" width="600" height="auto"/>
 </p>
 
 ### launch_trajectory_tracking.sh
@@ -158,7 +159,7 @@ This will start up the clients & servers for both joint & Cartesian velocity con
 Type `options` to see what is available.
 
 <p align="center">
-  <img src="doc/track_trajectory.png" width="600" height="auto"/>
+  <img src="doc/track_trajectory.gif" width="600" height="auto"/>
 </p>
 
 [:top: Back to Top.](#joystick-kuka-velocity-control)
@@ -170,7 +171,6 @@ Type `options` to see what is available.
 - Enables joystick control of robot endpoint,
 - Enables pose control with interactive marker, and
 - Config files for changing control parameters.
-
 
 [:top: Back to Top.](#joystick-kuka-velocity-control)
 

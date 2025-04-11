@@ -20,6 +20,7 @@ In essence, it serves as an example of how to implement the [serial_link_action_
 - [Launch Files](#rocket-launch-files)
 - [Release Notes](#package-release-notes---v100-april-2025)
 - [Contributing](#handshake-contributing)
+- [Citing this Repository](#bookmark_tabs-citing-this-repository)
 - [License](#scroll-license)
 
 ## :clipboard: Requirements
@@ -93,6 +94,7 @@ Play around with them and see how it works.
 ### mujoco.py
 
 If you don't have a real robot, you can use this MuJoCo simulation. Inside the `launch/mujoco.py` you need to specify the `xmlScenePath` where the model is located:
+
 ```
 xmlScenePath = "/home/<username>/workspace/mujoco_menagerie/kuka_iiwa_14/scene.xml"
 ```
@@ -170,14 +172,38 @@ Type `options` to see what is available.
 - Enables pose control with interactive marker, and
 - Config files for changing control parameters.
 
-
 [:top: Back to Top.](#joystick-kuka-velocity-control)
 
 ## :handshake: Contributing
 
-Contributions are always welcome. Feel free to fork the repository, make changes, and issue a pull request.
+Contributions to this repositore are welcome! Feel free to:
+1. Fork the repository,
+2. Implement your changes / improvements, then
+3. Issue a pull request.
 
-You can also raise an issue asking for new features.
+If you're looking for ideas, you can always check the [Issues tab](https://github.com/Woolfrey/control_kuka_velocity/issues) for those with :raising_hand: [OPEN]. These are things I'd like to implement, but don't have time for. It'd be much appreciated, and you'll be tagged as a contributor :sunglasses:
+
+[:top: Back to Top.](#joystick-kuka-velocity-control)
+
+## :bookmark_tabs: Citing this Repository
+
+If you find this code useful, spread the word by acknowledging it. Click on `Cite this repository` under the **About** section in the top-right corner of this page :arrow_upper_right:.
+
+Here's a BibTeX reference:
+```
+@software{woolfrey_kuka_velocity_control_2025,
+     author  = {Woolfrey, Jon},
+     month   = apr,
+     title   = {{K}uka {V}elocity {C}ontrol},
+     url     = {https://github.com/Woolfrey/control_kuka_velocity},
+     version = {1.0.0},
+     year    = {2025}
+}
+```
+Here's the automatically generated APA format:
+```
+Woolfrey, J. (2025). Kuka Velocity Control (Version 1.0.0). Retrieved from https://github.com/Woolfrey/control_kuka_velocity
+```
 
 [:top: Back to Top.](#joystick-kuka-velocity-control)
 
@@ -186,4 +212,3 @@ You can also raise an issue asking for new features.
 This software package is licensed under the [GNU General Public License v3.0 (GPL-3.0)](https://choosealicense.com/licenses/gpl-3.0/). You are free to use, modify, and distribute this package, provided that any modified versions also comply with the GPL-3.0 license. All modified versions must make the source code available and be licensed under GPL-3.0. The license also ensures that the software remains free and prohibits the use of proprietary restrictions such as Digital Rights Management (DRM) and patent claims. For more details, please refer to the [full license text](LICENSE).
 
 [:top: Back to Top.](#joystick-kuka-velocity-control)
-
